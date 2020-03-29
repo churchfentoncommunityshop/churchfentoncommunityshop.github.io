@@ -1,14 +1,93 @@
-<html><head><title>Church Fenton Community Shop</title></head>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Church Fenton Community Shop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="icon" href="../favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+<style>
+.slides { display:none;}
+p.clear { clear: none;}
+img.left { float: left; }
+</style>
+</head>
 <body>
-<img align=left src='img/logo.jpg'>
+<div class='w3-container'>
+	<img class='left' src='img/logo.jpg' width='100' height='139'>
+<p class="clear">
 <center><h1>Welcome to the Community Shop Browsing Site</h1></center>
-<p>
-We'll be adding some pictures soon
 </p>
-<p>
+<p class="clear">
 Scroll though the pictures of our shop shelves to help you with your order, or to speed up the time you spend looking for things if you pop into the shop.
 We don’t guarantee everything you see here will be in stock, and we will also have things not pictured, but we hope it will help and inspire! 
 Happy Browsing!
 </p>
+</div>
+      <div class="w3-content w3-display-container">
+        <img class="slides" src="img/freezer_pies.jpg " onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/freezer_ready_meals.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/freezer_veg.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/fridge_cheese.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/fridge_milk.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/fridge_pop.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/fridge_veg.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_beer.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_biscuits.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_bread.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_cereal.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_chocolate.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_cigarettes.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_cleaning.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_cleaning2.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_magazines.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_medication.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_pet_food.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_pies.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_pop.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_pulses.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_spices.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_stationery.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_storecupboard.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_sweets.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_tea_and_jam.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_tins.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_toilet_roll.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_wine.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_wine2.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_yorkshire1.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_yorkshire2.jpg" onclick="plusDivs(1)" style="width:100%">
+        <img class="slides" src="img/shelf_yorkshire3.jpg" onclick="plusDivs(1)" style="width:100%">
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+
+<script>
+window.onload=function() {
+  document.getElementById('id01').style.display='block'
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  if (n > x.length) {slideIndex = x.length}
+  if (n < 1) {slideIndex = 1}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
 </body>
 </html>
