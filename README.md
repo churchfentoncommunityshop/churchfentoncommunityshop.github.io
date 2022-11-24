@@ -1,1 +1,2 @@
-# Church Fenton Community Shop repository
+# Church Fenton Community Shop
+
