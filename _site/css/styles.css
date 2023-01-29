@@ -39,6 +39,23 @@ a:hover {
   opacity: 40%;
 }
 
+.sticky {
+  top: 0;
+  position: sticky;
+  position:-webkit-sticky;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.button-link {
+  font-size: 1rem;
+  background-color: #636060;
+  color: white;
+  margin: 1rem;
+  padding: 1rem;
+}
+
 .container {
   clear: both;
   width: 100%;
@@ -119,21 +136,23 @@ header img {
   justify-content: center;
 }
 
+.volunteering {
+  /* overflow: hidden; */
+}
+
 .float_left {
   clear: right;
   float: left;
   padding: 1em;
-  max-width: 40%;
-  height: auto;
+  max-width: 60%;
 }
 
 .float_right {
   clear: left;
   float: right;
   padding: 1em;
-  max-width: 40%;
-  height: auto;
-  max-height: 80%;
+  max-width: 60%;
+  /* max-height: 80%; */
 }
 
 .service_item {
