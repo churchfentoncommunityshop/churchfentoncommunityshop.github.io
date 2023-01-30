@@ -39,6 +39,17 @@ a:hover {
   opacity: 40%;
 }
 
+.hero--text {
+  text-align: center;
+}
+
+.quote {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+}
+
 .sticky {
   top: 0;
   position: sticky;
@@ -137,22 +148,21 @@ header img {
 }
 
 .volunteering {
-  /* overflow: hidden; */
+  font-size: 1em;
 }
 
 .float_left {
-  clear: right;
-  float: left;
+  clear:right;
+  float:left;
   padding: 1em;
   max-width: 60%;
 }
 
 .float_right {
-  clear: left;
-  float: right;
+  clear:left;
+  float:right;
   padding: 1em;
   max-width: 60%;
-  /* max-height: 80%; */
 }
 
 .service_item {
@@ -284,6 +294,7 @@ p {
   font-weight: 300;
 }
 
+
   @media (max-width:700px) {
     .fa {
       font-size: 0.4em;
@@ -300,5 +311,14 @@ p {
 
     .cu-address {
       font-size: 1.2em;
+    }
+  }
+
+  @media (min-width:500px){
+    .volunteering img {
+      max-height:4.5em;
+    }
+    .volunteering p {
+      font-size: 1.5em;
     }
   }
