@@ -1,0 +1,6 @@
+_site
+.sass-cache
+_CFVS2022
+images_working
+.jekyll-cache/*
+.DS_Store
