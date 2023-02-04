@@ -1,0 +1,15 @@
+# Site Settings
+title: Church Fenton Community Shop
+email: robin@g4giy.uk
+description: >
+  A guide to getting started with Jekyll.
+baseurl: "/cfcs"
+url: ""
+twitter_username: robinharris
+github_username:  robinharris
+# Build Settings
+sass:
+  sass_dir: _sass
+include: ['_pages']
+kramdown:
+  input: GFM
