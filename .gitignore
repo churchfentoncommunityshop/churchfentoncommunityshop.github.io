@@ -4,3 +4,4 @@ _CFVS2022
 images_working
 .jekyll-cache/*
 .DS_Store
+feed.xml
