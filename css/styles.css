@@ -139,14 +139,6 @@
 /* } */
 
 
-
-
-
-
-
-
-
-
 body {
   background-color: #B3B995;
   font-family:  Georgia, serif;
@@ -154,7 +146,7 @@ body {
   line-height: 1.1;
   color:#636060;
   width: 100%;
-  margin: 4em 0 0 0;
+  margin: 6em 0 0 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -217,28 +209,6 @@ a:hover {
   clear: both;
   width: 100%;
   margin: 2em auto;
-}
-
-header img {
-  /* display:block;
-  width: 70vw;
-  margin: 0 auto; */
-}
-
-.row--header {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 2em;
-  padding:1em;
-  justify-content: center;
-  background-color: hsl(57, 45%, 90%);
-}
-
-.row--header a{
-  font-size: 0.7em;
-  color: #636060;
-  font-weight: 600;
-  padding: 0 1rem;
 }
 
 .box {
