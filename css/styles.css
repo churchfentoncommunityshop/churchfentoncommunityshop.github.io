@@ -286,6 +286,7 @@ a:hover {
   display: flex;
   padding:1em;
   margin: 1em;
+  background-color: hsl(57, 45%, 90%);
 }
 
 @media (max-width: 500px) {
@@ -342,7 +343,7 @@ p {
   /* width: 40%; */
   margin: 2rem 0;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 25px;
 }
 
 .col img {
@@ -350,19 +351,18 @@ p {
 }
 
 .col p {
-  font-size: 2vw;
+  font-size: 4vw;
 }
 
 .full_width_list {
   width: 80%;
   column-count: 4;
-  padding: 1rem 1rem 1rem 5rem;
+  padding: 2vw 2vw 2vw 5vw;
   margin-bottom: 2rem;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   list-style-position: outside;
   text-align: left;
-  margin:1rem;
 }
 
 .cu-address {
