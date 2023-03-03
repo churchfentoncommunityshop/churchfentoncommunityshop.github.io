@@ -245,8 +245,8 @@ a:hover {
 }
 
 .row img {
-  max-height: 80%;
-  max-width:40%;
+  max-height: 60%;
+  /* max-width:15%; */
   padding: 1em;
 }
 
@@ -351,7 +351,7 @@ p {
 }
 
 .col p {
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 .full_width_list {
