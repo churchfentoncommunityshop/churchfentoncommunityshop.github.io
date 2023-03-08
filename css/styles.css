@@ -35,10 +35,11 @@
 }
 
 .header .logo {
-  display: block;
+  /* display: inline ; */
   float: left;
   font-size: 2em;
-  padding: 10px 20px;
+  margin: 0 5vw;
+  padding: 10px 10px;
   text-decoration: none;
   max-width:65%;
 }
@@ -179,7 +180,8 @@ a:hover {
 
 .hero--text {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  color:  hsl(57, 45%, 90%);
 }
 
 .quote {
