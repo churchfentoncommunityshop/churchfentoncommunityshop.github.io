@@ -346,8 +346,8 @@ p {
   margin: 2rem 0;
   background-color:#B3B995;
   color: hsl(57, 45%, 90%);
-  border: #636060 solid 1px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 25px;
+  border: hsl(57, 45%, 90%) solid 1px;
+  /* box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 25px; */
 }
 
 .col img {
