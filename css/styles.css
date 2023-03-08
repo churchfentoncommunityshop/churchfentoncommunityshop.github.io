@@ -165,6 +165,7 @@ h2 {
 
 h3 {
   margin: 1em;
+  text-align: center;
 }
 
 a {
@@ -211,6 +212,19 @@ a:hover {
   margin: 1rem auto;
 }
 
+.opening_times {
+  display: grid;
+  grid-template-columns: min-content auto;
+  gap: 1rem;
+  margin: 1rem 1rem 1rem 3rem;
+  padding: 1rem;
+}
+
+.opening_times p {
+  margin:0;
+  padding: 0;
+}
+
 .box {
   width:50%;
   margin: 1em;
@@ -245,8 +259,8 @@ a:hover {
 }
 
 .row img {
-  max-height: 60%;
-  /* max-width:15%; */
+  max-height: 20%;
+  max-width:30%;
   padding: 1em;
 }
 
@@ -281,27 +295,11 @@ a:hover {
   max-width: 60%;
 }
 
-.service_item {
-  border: 2px solid #636060;
-  display: flex;
-  padding:1em;
-  margin: 1em;
-  background-color: hsl(57, 45%, 90%);
-}
 
 @media (max-width: 500px) {
-  .service_item {
-    flex-direction: column;
-  }
   .row{
     flex-direction: column;
   }
-}
-
-.service_img {
-  flex-basis: 30%;
-  flex-shrink: 3;
-  align-self: center;
 }
 
 .service_p {
