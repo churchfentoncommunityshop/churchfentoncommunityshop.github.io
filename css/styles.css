@@ -344,7 +344,9 @@ p {
 .col {
   width: 40%;
   margin: 2rem 0;
-  background-color: white;
+  background-color:#B3B995;
+  color: hsl(57, 45%, 90%);
+  border: #636060 solid 1px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 10px 25px;
 }
 
@@ -355,6 +357,9 @@ p {
 
 .col p {
   font-size: 3vw;
+  font-weight: bold;
+  line-height: 0.5rem;
+  padding: 0;
 }
 
 .full_width_list {
