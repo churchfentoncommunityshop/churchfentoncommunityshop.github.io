@@ -212,6 +212,10 @@ a:hover {
   margin: 1rem auto;
 }
 
+.container a {
+  text-align: center;
+}
+
 .opening_times {
   display: grid;
   grid-template-columns: min-content auto;
