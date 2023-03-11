@@ -3,7 +3,7 @@
 
 .header {
   background-color: #fff;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
   position: fixed;
   top: 0;
   width: 100%;
@@ -35,12 +35,9 @@
 }
 
 .header .logo {
-  /* display: inline ; */
   float: left;
-  font-size: 2em;
-  margin: 0 5vw;
-  padding: 10px 10px;
-  text-decoration: none;
+  padding-top: 1rem;
+  padding-left: 15vw;
   max-width:65%;
 }
 
@@ -284,7 +281,7 @@ a:hover {
 }
 
 .volunteering {
-  font-size: 1em;
+  font-size: 0.7em;
 }
 
 .float_left {
@@ -368,11 +365,12 @@ p {
   width: 80%;
   column-count: 3;
   padding: 2vw 2vw 2vw 5vw;
-  margin-bottom: 2rem;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #B3B995;
+  /* color: hsl(57, 45%, 90%); */
+  border: hsl(57, 45%, 90%) solid 1px;
   list-style-position: outside;
   text-align: left;
+  background-color: #B3B995;
 }
 
 .cu-address {
