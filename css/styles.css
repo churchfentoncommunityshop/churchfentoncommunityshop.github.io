@@ -355,6 +355,7 @@ p {
 }
 
 .col p {
+  font-family: Arial, sans-serif;
   font-size: 3vw;
   font-weight: bold;
   line-height: 0.5rem;
