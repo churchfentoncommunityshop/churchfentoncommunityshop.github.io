@@ -117,26 +117,6 @@
   top: 0;
 }
 
-/* 48em = 768px */
-
-/* @media (min-width: 1000px) {
-  .header li {
-    float: left;
-  }
-  .header li a {
-    padding: 20px 30px;
-  }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  } */
-/* } */
-
-
 body {
   background-color: #B3B995;
   font-family:  Georgia, serif;
@@ -149,8 +129,10 @@ body {
   box-sizing: border-box;
 }
 
+
 img {
   max-width: 100%;
+  vertical-align: middle;
 }
 
 h2 {
@@ -174,6 +156,57 @@ a {
 a:hover {
   opacity: 40%;
 }
+
+/* =============================== */
+/* Carousel */
+/* =============================== */
+/* Slideshow container */
+.slideshow-container {
+  width: 40%;
+  margin: 0.5rem 0;
+  background-color:#B3B995;
+  color: hsl(57, 45%, 90%);
+  border: hsl(57, 45%, 90%) solid 1px;
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "prev button" to the left */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+/* =============================== */
+
 
 .hero--text {
   text-align: center;
@@ -200,7 +233,7 @@ a:hover {
 .button-link {
   font-size: 1rem;
   background-color: #636060;
-  color: white;
+  color: red;
   margin: 1rem;
   padding: 1rem;
 }
@@ -354,12 +387,15 @@ p {
   max-width:100%;
 }
 
-.col p {
+.col, .slideshow-container p {
   font-family: Arial, sans-serif;
   font-size: 3vw;
   font-weight: bold;
   line-height: 0.5rem;
   padding: 0;
+  background-color:#B3B995;
+  color: hsl(57, 45%, 90%);
+
 }
 
 .full_width_list {

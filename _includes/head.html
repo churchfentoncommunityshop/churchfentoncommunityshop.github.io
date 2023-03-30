@@ -8,4 +8,41 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<!-- Add icon library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!-- Carousel -->
+	<script>
+		// this array holds the initial slide of a group and is updated as slides are changed
+		// there must be one member for each group
+		var slideIndex = [1,1,1,1,1,1];
+		// these are the class names used to link slides in a group 
+		var slideId = ["worldfoods", "fresh", "wines", "deli", "yorkshire", "snacks"]
+		
+		// increments slide number in a group (plus or minus)
+		// by calling showDivs with an increment value and a group name
+		function plusDivs(n, group) {
+		  showDivs(slideIndex[group] += n, group);
+		}
+		
+		// changes the slide within a group to be displayed.  Turns others to display:none
+		function showDivs(n, group) {
+		  var i;
+		//   get the slides in a group - need to use the total number
+		  var x = document.getElementsByClassName(slideId[group]);
+		  if (n > x.length) {slideIndex[group] = 1}
+		  if (n < 1) {slideIndex[group] = x.length}
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		//   turn on display of required slide
+		  x[slideIndex[group]-1].style.display = "block";  
+		}
+		// used to show first slide of group onload. Number of groups is fixed at 6
+		function showAll() {
+			for (i=0; i<6; i++){
+				showDivs(1,i);
+			}
+		}
+
+		</script>
+
 </head> 
